@@ -1,10 +1,14 @@
 class AccountsController < ApplicationController
-  
-  def index
 
+  def index
+    
   end
 
   def show 
+
+  end
+
+  def create
 
   end
 
