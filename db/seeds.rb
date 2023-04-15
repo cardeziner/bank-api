@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+@james = Customer.create(id: 1, name: "James")
+@bob = Customer.create(id: 2, name: "Bob")
+Account.create(balance: 1000, customer_id: @james.id)
+Account.create(balance: 2000, customer_id: @bob.id)
+
