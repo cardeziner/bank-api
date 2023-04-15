@@ -35,6 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_14_235112) do
 
   create_table "transfers", force: :cascade do |t|
     t.integer "amount"
+    t.integer "recipient_account_id"
     t.integer "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

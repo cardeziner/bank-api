@@ -7,6 +7,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 @james = Customer.create(id: 1, name: "James")
 @bob = Customer.create(id: 2, name: "Bob")
-Account.create(balance: 1000, customer_id: @james.id)
-Account.create(balance: 2000, customer_id: @bob.id)
-
+@account_1 = Account.create(balance: 1000, customer_id: @james.id)
+@account_2 = Account.create(balance: 2000, customer_id: @bob.id)
+Transfer.create(amount: 150, account_id: @account_1.id, recipient_account_id: @account_2.id )

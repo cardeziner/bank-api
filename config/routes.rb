@@ -2,11 +2,13 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do 
-      resources :accounts, only: [:show, :create]
-      resources :transfers
-      resources :customers, only: [:index]
-      resources :deposits
-      resources :withdrawals
+      resources :customers do 
+        resources :accounts, only: [:index, :show, :create] do 
+          resources :transfers, only: [:index, :create]
+          resources :deposits
+          resources :withdrawals
+        end
+      end
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
