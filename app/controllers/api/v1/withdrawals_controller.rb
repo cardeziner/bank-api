@@ -1,7 +1,7 @@
-class AccountsController < ApplicationController
-
-  def index
+class Api::V1::WithdrawalsController < ApplicationController
     
+  def index
+
   end
 
   def show 
@@ -19,5 +19,4 @@ class AccountsController < ApplicationController
   def destroy
 
   end
-
 end

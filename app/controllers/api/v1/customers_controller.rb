@@ -1,7 +1,7 @@
-class UsersController < ApplicationController
+class Api::V1::CustomersController < ApplicationController
     
   def index
-
+    
   end
 
   def show 
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def create
-
+  
   end
 
   def update

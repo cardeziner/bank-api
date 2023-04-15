@@ -1,4 +1,4 @@
-class WithdrawalsController < ApplicationController
+class Api::V1::DepositsController < ApplicationController
     
   def index
 
